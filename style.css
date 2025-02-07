@@ -1,0 +1,46 @@
+<style>
+    body {
+        background-color: #ffe6f2;
+        text-align: center;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        color: #ff66b2;
+    }
+    .container {
+        padding: 50px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .heart {
+        font-size: 5rem;
+        animation: heartbeat 1s infinite;
+    }
+    @keyframes heartbeat {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+    .buttons {
+        margin-top: 20px;
+    }
+    button {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .yes {
+        background-color: #ff99cc;
+        color: white;
+    }
+    .no {
+        background-color: #ff4d94;
+        color: white;
+    }
+    .no:hover {
+        position: absolute;
+        left: calc(10% + 80% * random());
+        top: calc(10% + 80% * random());
+    }
+</style>
